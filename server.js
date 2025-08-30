@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// اختبر الاتصال بقاعدة البيانات
+// اختبار الاتصال بقاعدة البيانات
 sequelize.sync().then(() => {
   app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
